@@ -1,9 +1,7 @@
 import { Gift, Heart, Coffee } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const GiftCardsSection = () => {
-  return (
-    <section id="gift-cards" className="py-20 bg-gradient-warm relative overflow-hidden">
+  return <section id="gift-cards" className="py-20 bg-gradient-warm relative overflow-hidden">
       {/* Decorative Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-40 h-40 border-2 border-primary-foreground rounded-full" />
@@ -25,18 +23,13 @@ const GiftCardsSection = () => {
               <span className="text-accent">Gift Card</span>
             </h2>
             
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-lg">
+            <p className="text-lg mb-8 max-w-lg text-secondary-foreground">
               Give the gift of delicious food and amazing coffee. Our digital gift cards 
               are perfect for birthdays, holidays, or just because.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button
-                variant="hero"
-                size="lg"
-                className="gap-2"
-                onClick={() => window.open("https://www.toasttab.com/maplewooddeli&coffeehouse/giftcards", "_blank")}
-              >
+              <Button variant="hero" size="lg" className="gap-2" onClick={() => window.open("https://www.toasttab.com/maplewooddeli&coffeehouse/giftcards", "_blank")}>
                 <Gift className="w-5 h-5" />
                 Buy Gift Card
               </Button>
@@ -70,15 +63,15 @@ const GiftCardsSection = () => {
               <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent rounded-full flex items-center justify-center shadow-lg animate-float">
                 <Heart className="w-8 h-8 text-accent-foreground fill-accent-foreground" />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-sage rounded-full flex items-center justify-center shadow-lg animate-float" style={{ animationDelay: "0.5s" }}>
+              <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-sage rounded-full flex items-center justify-center shadow-lg animate-float" style={{
+              animationDelay: "0.5s"
+            }}>
                 <Gift className="w-6 h-6 text-sage-foreground" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default GiftCardsSection;
