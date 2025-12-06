@@ -24,24 +24,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      # ⬇️ START: ADD THESE STEPS TO BUILD YOUR VITE PROJECT ⬇️
+      # ⬇️ START: BUILD PROCESS ADDED ⬇️
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a recent stable Node version
+          node-version: '20' # Recommended stable Node version
           cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
+        # This executes the "build": "vite build" script from your package.json
         run: npm run build
-      # ⬆️ END: ADDED BUILD STEPS ⬆️
+      # ⬆️ END: BUILD PROCESS ⬆️
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
         
-      # ⬇️ IMPORTANT: Upload the 'dist' folder, not the whole repository ⬇️
+      # IMPORTANT: This step now uploads the 'dist' folder created by 'npm run build'
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
