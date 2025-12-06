@@ -5,8 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // This line is added to fix the 404 error on GitHub Pages.
-  // It tells Vite to build all file paths relative to the repository name.
+  // This line is essential for GitHub Pages
   base: '/maplewood-modem-makeover/', 
   server: {
     host: "::",
@@ -16,6 +15,6 @@ export default defineConfig(({ mode }) => ({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
-  },
+    },
+  },
 }));
