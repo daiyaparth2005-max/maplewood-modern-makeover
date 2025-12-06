@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import maplewoodLogo from "@/assets/maplewood-logo.png";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -37,21 +38,11 @@ const Navigation = () => {
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-            <span className="text-primary-foreground font-display text-xl font-bold">M</span>
-          </div>
-          <div className="hidden sm:block">
-            <span className={`font-display text-xl font-semibold transition-colors duration-300 ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}>
-              Maplewood
-            </span>
-            <span className={`block text-xs tracking-widest uppercase transition-colors duration-300 ${
-              isScrolled ? "text-muted-foreground" : "text-primary-foreground/80"
-            }`}>
-              Deli & Coffeehouse
-            </span>
-          </div>
+          <img 
+            src={maplewoodLogo} 
+            alt="Maplewood Deli & Coffeehouse" 
+            className="w-14 h-14 rounded-full object-cover transition-transform duration-300 group-hover:scale-110"
+          />
         </a>
 
         {/* Desktop Navigation */}
