@@ -3,20 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Maplewood Deli & Coffeehouse | Food & Drinks Made with Love</title>
+    <meta name="description" content="Your neighborhood deli & coffeehouse in Maplewood, MO. Fresh artisan sandwiches, expertly crafted coffee, and warm hospitality. Love for ALL humans and pets." />
+    <meta name="author" content="Maplewood Deli & Coffeehouse" />
+    <meta name="keywords" content="Maplewood deli, coffee shop, coffeehouse, sandwiches, breakfast, lunch, Maplewood MO, pet friendly cafe" />
+    <link rel="canonical" href="https://www.maplewooddeliandcoffeehouse.com/" />
 
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Maplewood Deli & Coffeehouse | Food & Drinks Made with Love" />
+    <meta property="og:description" content="Your neighborhood deli & coffeehouse in Maplewood, MO. Fresh artisan sandwiches, expertly crafted coffee, and warm hospitality." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.maplewooddeliandcoffeehouse.com/" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:title" content="Maplewood Deli & Coffeehouse" />
+    <meta name="twitter:description" content="Food & Drinks Made with Love in Maplewood, MO" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Maplewood Deli & Coffeehouse",
+        "image": "https://lovable.dev/opengraph-image-p98pqg.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7298 Manchester Road",
+          "addressLocality": "Maplewood",
+          "addressRegion": "MO",
+          "postalCode": "63143",
+          "addressCountry": "US"
+        },
+        "servesCuisine": ["American", "Coffee", "Deli"],
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday", "Sunday"],
+            "opens": "07:30",
+            "closes": "17:00"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
