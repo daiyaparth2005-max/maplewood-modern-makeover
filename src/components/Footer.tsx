@@ -1,5 +1,6 @@
 import { Heart, Instagram, Facebook, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import maplewoodLogo from "@/assets/maplewood-logo.png";
 
 const ORDER_ONLINE_URL = "https://www.toasttab.com/maplewooddeli&coffeehouse";
 const GIFT_CARDS_URL = "https://www.toasttab.com/maplewooddeli&coffeehouse/giftcards";
@@ -47,13 +48,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center">
-                <span className="text-accent-foreground font-display text-2xl font-bold">M</span>
-              </div>
-              <div>
-                <span className="font-display text-2xl font-semibold block">Maplewood</span>
-                <span className="text-primary-foreground/70 text-sm tracking-widest uppercase">Deli & Coffeehouse</span>
-              </div>
+              <img 
+                src={maplewoodLogo} 
+                alt="Maplewood Deli & Coffeehouse" 
+                className="w-16 h-16 rounded-full object-cover"
+              />
             </div>
             <p className="text-primary-foreground/70 leading-relaxed mb-6 max-w-sm">
               Your neighborhood deli & coffeehouse in Maplewood, MO. 
