@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      # ⬇️ START: BUILD PROCESS ADDED ⬇️
+      # ⬇ START: BUILD PROCESS ADDED ⬇
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -37,7 +37,7 @@ jobs:
       - name: Build project
         # This executes the "build": "vite build" script from your package.json
         run: npm run build
-      # ⬆️ END: BUILD PROCESS ⬆️
+      # ⬆ END: BUILD PROCESS ⬆
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
