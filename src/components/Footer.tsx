@@ -1,18 +1,20 @@
 import { Heart, Instagram, Facebook, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const ORDER_ONLINE_URL = "https://www.toasttab.com/maplewooddeli&coffeehouse";
+const GIFT_CARDS_URL = "https://www.toasttab.com/maplewooddeli&coffeehouse/giftcards";
+
 const footerLinks = {
   quickLinks: [
     { label: "Home", href: "#home" },
     { label: "Menu", href: "#menu" },
     { label: "Events", href: "#events" },
-    { label: "Gift Cards", href: "#" },
+    { label: "Gift Cards", href: "#gift-cards" },
   ],
   connect: [
     { label: "Contact Us", href: "#contact" },
-    { label: "Order Online", href: "#" },
-    { label: "Catering", href: "#" },
-    { label: "Careers", href: "#" },
+    { label: "Order Online", href: ORDER_ONLINE_URL, external: true },
+    { label: "Buy Gift Card", href: GIFT_CARDS_URL, external: true },
   ],
 };
 
@@ -110,6 +112,8 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
+                    target={link.external ? "_blank" : undefined}
+                    rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-primary-foreground/70 hover:text-accent transition-colors"
                   >
                     {link.label}

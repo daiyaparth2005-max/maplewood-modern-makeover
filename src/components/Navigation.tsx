@@ -8,8 +8,11 @@ const navItems = [
   { label: "Menu", href: "#menu" },
   { label: "Hours", href: "#hours" },
   { label: "Events", href: "#events" },
+  { label: "Gift Cards", href: "#gift-cards" },
   { label: "Contact", href: "#contact" },
 ];
+
+const ORDER_ONLINE_URL = "https://www.toasttab.com/maplewooddeli&coffeehouse";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,7 +68,11 @@ const Navigation = () => {
               {item.label}
             </a>
           ))}
-          <Button variant="hero" size="sm">
+          <Button 
+            variant="hero" 
+            size="sm"
+            onClick={() => window.open(ORDER_ONLINE_URL, "_blank")}
+          >
             Order Online
           </Button>
         </div>
@@ -99,7 +106,11 @@ const Navigation = () => {
               {item.label}
             </a>
           ))}
-          <Button variant="hero" className="mt-4">
+          <Button 
+            variant="hero" 
+            className="mt-4"
+            onClick={() => window.open(ORDER_ONLINE_URL, "_blank")}
+          >
             Order Online
           </Button>
         </div>

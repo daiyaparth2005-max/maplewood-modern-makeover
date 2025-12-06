@@ -4,6 +4,8 @@ import AboutSection from "@/components/AboutSection";
 import MenuSection from "@/components/MenuSection";
 import HoursSection from "@/components/HoursSection";
 import EventsSection from "@/components/EventsSection";
+import GiftCardsSection from "@/components/GiftCardsSection";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,6 +17,8 @@ const Index = () => {
       <MenuSection />
       <HoursSection />
       <EventsSection />
+      <GiftCardsSection />
+      <ContactSection />
       <Footer />
     </main>
   );
