@@ -5,8 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // This line sets the base path for assets, essential for GitHub Pages (which uses the repository name as a subfolder)
-  base: '/maplewood-modem-makeover/',
+  // This line is added to fix the 404 error on GitHub Pages.
+  // It tells Vite to build all file paths relative to the repository name.
+  base: '/maplewood-modem-makeover/', 
   server: {
     host: "::",
     port: 8080,
